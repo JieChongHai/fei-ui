@@ -8,18 +8,18 @@
     "vue"
   ],
   "author": "feifei300",
+  "license": "ISC",
   "files": [
     "dist",
     "components"
   ],
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "npm run build:lib && npm run build:style",
-    "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint",
+    "build": "npm run build:comp && npm run build:style",
     "build:comp": "webpack --config webpack.component.js",
-    "build:lib": "webpack --config webpack.library.js",
-    "build:style": "gulp sass"
+    "build:style": "gulp sass",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.8.3",
@@ -42,7 +42,7 @@
     "gulp-sass": "^5.1.0",
     "jest": "^27.0.5",
     "sass": "^1.32.7",
-    "sass-loader": "^12.0.0",
+    "sass-loader": "^12.6.0",
     "vue-loader": "^15.9.8",
     "vue-template-compiler": "^2.6.14",
     "webpack-cli": "^4.9.2"
