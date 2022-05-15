@@ -1,6 +1,8 @@
 const glob = require('glob');
 const path = require('path');
-const { VueLoaderPlugin } = require('vue-loader')
+const { VueLoaderPlugin } = require('vue-loader');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+
 // 构造以下对象
 // {
 //   "card": "components/lib/card/index.js",
@@ -37,6 +39,7 @@ const config = {
     ]
   },
   plugins: [
+    new CleanWebpackPlugin(),
     new VueLoaderPlugin()
   ]
 };
