@@ -1,12 +1,14 @@
-const gulp = require('gulp');
+const { src, dest } = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const minifyCSS = require("gulp-minify-css");
 const del = require('del');
 
-gulp.task('sass', async function () {
+async function css() {
   await del(['dist/css']);
-  return gulp.src('components/css/**/*.scss')
+  return src('components/css/**/*.scss')
     .pipe(sass())
     .pipe(minifyCSS())
-    .pipe(gulp.dest('dist/css'));
-});
+    .pipe(dest('dist/css'));
+}
+
+exports.default = css;

@@ -17,7 +17,7 @@
     "serve": "vue-cli-service serve",
     "build": "npm run build:comp && npm run build:style",
     "build:comp": "webpack --config webpack.component.js",
-    "build:style": "gulp sass",
+    "build:style": "gulp",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint"
   },
