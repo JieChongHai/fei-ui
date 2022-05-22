@@ -28,7 +28,8 @@ const config = {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].umd.js',
     library: "feiui",
-    libraryTarget: "umd"
+    libraryTarget: "umd",
+    globalObject: 'this',
   },
   module: {
     rules: [
