@@ -1,6 +1,6 @@
 {
   "name": "feifei-ui",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "个人学习组件库",
   "main": "dist/lib.umd.js",
   "keywords": [
