@@ -29,6 +29,7 @@ const config = {
     filename: '[name].umd.js',
     library: "feiui",
     libraryTarget: "umd",
+    // https://webpack.docschina.org/configuration/output/#outputglobalobject
     globalObject: 'this',
   },
   module: {
