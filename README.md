@@ -4,19 +4,19 @@
 
 ### 1.安装组件库
 ```bash
-npm i fei-ui
+npm i feifei-ui
 ```
 
 ### 2.引用组件库
 ```javascript
 // 全部引入
-import 'fei-ui/dist/css/index.css';
-import FeiUI from 'fei-ui';
+import 'feifei-ui/dist/css/index.css';
+import FeiUI from 'feifei-ui';
 Vue.use(FeiUI);
 
 // 按需引用
-import 'fei-ui/dist/css/card.css';
-import { card } from 'fei-ui';
+import 'feifei-ui/dist/css/card.css';
+import { card } from 'feifei-ui';
 Vue.use(card);
 ```
 ## Project setup
